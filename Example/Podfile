@@ -2,6 +2,7 @@ use_frameworks!
 
 target 'OMGenericTableView_Example' do
   pod 'OMGenericTableView', :path => '../'
+  pod 'Popover'
 
   target 'OMGenericTableView_Tests' do
     inherit! :search_paths
