@@ -12,11 +12,14 @@
 		05191808C34FF7056A1A2BBCD893E430 /* Pods-OMGenericTableView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CE10DD0F95EC12AB7EEF8873CD492A8 /* Pods-OMGenericTableView_Tests-dummy.m */; };
 		0A1B0CB2ECCC06150AF3CFD94ACAEB3F /* Callsite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC07B6CC006238186A56EEC6E8D3CD88 /* Callsite.swift */; };
 		0E507E5AD996F4D9435F0999AB5E90AA /* QuickConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D4DEBAA391B6F9E5C9294F4DE25CA96 /* QuickConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E57FBBF58A806B038B1B28E5E178AAE /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEE202B92B5C10E951A3F3038D16340D /* ReplaceMe.swift */; };
 		112614F21939902B59102E6E876ADCBC /* RaisesException.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A414C35360A25163AA8D7D17AB68C77 /* RaisesException.swift */; };
 		1300A805B577310307E607BB4DE8345C /* QCKDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E738963C2EB4542069F1E6586836C9 /* QCKDSL.m */; };
 		135B6326D35C977854AA0C12B3F6CB7D /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627E4E84747227302312F1E22D114789 /* DSL.swift */; };
 		13CC849FA70CADF802470B6A90DCDF79 /* AllPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AD566EC508F35AEBD09410C38B0113 /* AllPass.swift */; };
+		1A232CF51CF7EA0700B273D3 /* OMDefines.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A232CF11CF7EA0700B273D3 /* OMDefines.swift */; };
+		1A232CF61CF7EA0700B273D3 /* OMGenericTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A232CF21CF7EA0700B273D3 /* OMGenericTableCell.swift */; };
+		1A232CF71CF7EA0700B273D3 /* OMTableCellMetaData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A232CF31CF7EA0700B273D3 /* OMTableCellMetaData.swift */; };
+		1A232CF81CF7EA0700B273D3 /* OMTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A232CF41CF7EA0700B273D3 /* OMTableViewController.swift */; };
 		1A6525E71673AC426C530A53904D08B7 /* DSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414114D9FD8600FA208D6152470C2DF0 /* DSL.swift */; };
 		1C27E9BFA540EA284EB29455DD1188E2 /* World.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDCA8E96FF6E3C7A604705D4D34B06 /* World.swift */; };
 		1ED8C77E9422C66BBF56E6C10D5826F0 /* NMBExceptionCapture.m in Sources */ = {isa = PBXBuildFile; fileRef = D365431FBA3C40A9570E9266B44005D7 /* NMBExceptionCapture.m */; };
@@ -143,6 +146,10 @@
 		14E1DC94DD47A6F91084F3EAA92AF552 /* Quick.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Quick.modulemap; sourceTree = "<group>"; };
 		17714209B41AD2EBB9104A8983C90512 /* Pods_OMGenericTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OMGenericTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18D110A87EF135293B27C04BD720A8E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A232CF11CF7EA0700B273D3 /* OMDefines.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMDefines.swift; sourceTree = "<group>"; };
+		1A232CF21CF7EA0700B273D3 /* OMGenericTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMGenericTableCell.swift; sourceTree = "<group>"; };
+		1A232CF31CF7EA0700B273D3 /* OMTableCellMetaData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMTableCellMetaData.swift; sourceTree = "<group>"; };
+		1A232CF41CF7EA0700B273D3 /* OMTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OMTableViewController.swift; sourceTree = "<group>"; };
 		1C369DE47B8FBDDF56994EF084D14F12 /* HooksPhase.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HooksPhase.swift; path = Sources/Quick/Hooks/HooksPhase.swift; sourceTree = "<group>"; };
 		203A5C5D36EAB5C74A7CA2C7F3E57854 /* BeginWith.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeginWith.swift; path = Sources/Nimble/Matchers/BeginWith.swift; sourceTree = "<group>"; };
 		220313EE4900E14CEB49D8B5B6C249ED /* OMGenericTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OMGenericTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,7 +257,6 @@
 		E2353FC0C41320250E7132DE6734F885 /* QuickConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = QuickConfiguration.m; path = Sources/Quick/Configuration/QuickConfiguration.m; sourceTree = "<group>"; };
 		E2DE7320F652DCF39EB6A1476F0C761B /* NimbleXCTestHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NimbleXCTestHandler.swift; path = Sources/Nimble/Adapters/NimbleXCTestHandler.swift; sourceTree = "<group>"; };
 		EA1C305082DBF75710A818FFBD2714D2 /* Nimble-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Nimble-umbrella.h"; sourceTree = "<group>"; };
-		EEE202B92B5C10E951A3F3038D16340D /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
 		EF1A993D76C1A4FDC682FCF246DC784B /* Nimble.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Nimble.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB2D871B9C6D5C6EE2172BB9AFD2627 /* BeVoid.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BeVoid.swift; path = Sources/Nimble/Matchers/BeVoid.swift; sourceTree = "<group>"; };
 		F17FBDF6FF6B666A3D102EDD81DFE416 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Quick/Filter.swift; sourceTree = "<group>"; };
@@ -381,7 +387,10 @@
 		41E9C77EE329A4DFC3AC03965E2AC922 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				EEE202B92B5C10E951A3F3038D16340D /* ReplaceMe.swift */,
+				1A232CF11CF7EA0700B273D3 /* OMDefines.swift */,
+				1A232CF21CF7EA0700B273D3 /* OMGenericTableCell.swift */,
+				1A232CF31CF7EA0700B273D3 /* OMTableCellMetaData.swift */,
+				1A232CF41CF7EA0700B273D3 /* OMTableViewController.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -802,8 +811,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A232CF61CF7EA0700B273D3 /* OMGenericTableCell.swift in Sources */,
+				1A232CF71CF7EA0700B273D3 /* OMTableCellMetaData.swift in Sources */,
+				1A232CF51CF7EA0700B273D3 /* OMDefines.swift in Sources */,
+				1A232CF81CF7EA0700B273D3 /* OMTableViewController.swift in Sources */,
 				6314F5F8F6111ACCF9EAC27D51E85389 /* OMGenericTableView-dummy.m in Sources */,
-				0E57FBBF58A806B038B1B28E5E178AAE /* ReplaceMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -950,6 +962,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A582419FE1FF7136FF6D2ECE637E13E9 /* OMGenericTableView.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -1179,6 +1192,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A582419FE1FF7136FF6D2ECE637E13E9 /* OMGenericTableView.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
