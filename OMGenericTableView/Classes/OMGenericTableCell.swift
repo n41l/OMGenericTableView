@@ -12,7 +12,7 @@ public class OMGenericTableCell: UITableViewCell {
     
     public lazy var cellSeparatorLine: UIView = {
         let result = UIView(frame: CGRect(x: 0, y: self.bounds.height - 1, width: self.bounds.width, height: 1))
-        result.backgroundColor = UIColor(red: 0.529, green: 0.529, blue: 0.529, alpha: 1.00)
+        result.backgroundColor = UIColor(red: 0.333, green: 0.333, blue: 0.333, alpha: 1.00)
         return result
     }()
     

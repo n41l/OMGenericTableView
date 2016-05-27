@@ -25,19 +25,19 @@ public class OMTableCellMetaData: NSObject {
     
     public var cellHeight: CGFloat = 60
     public var cellBackgroundColor: UIColor = UIColor.whiteColor()
-    public var cellSelection: Bool = true
+    public var cellSelection: Bool = false
     public var cellCustomSeparatorShow: Bool = false
     
     public init?(_ withClass: AnyClass) {
         guard var className = String.fromCString(class_getName(withClass)) else { return nil }
-        
+
         if let dotIndex = className.characters.indexOf(".") {
             let range = dotIndex.successor()..<className.endIndex
             className = className[range]
         }
         
-        cellIdentifier = className
         cellNibName = className
+        cellIdentifier = className
         currentCellClass = withClass
         allCustomOptions = [String: AnyObject]()
         super.init()
@@ -70,8 +70,8 @@ public class OMTableCellMetaData: NSObject {
         return self
     }
     
-    public func with(cellCustomSeparatorShow: Bool) -> OMTableCellMetaData {
-        self.cellCustomSeparatorShow = cellCustomSeparatorShow
+    public func with(cellCustomSeparatorShow flag: Bool) -> OMTableCellMetaData {
+        self.cellCustomSeparatorShow = flag
         return self
     }
     

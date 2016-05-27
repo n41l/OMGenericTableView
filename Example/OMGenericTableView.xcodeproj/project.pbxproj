@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A232CFA1CF7EB7700B273D3 /* PopoverInformationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A232CF91CF7EB7700B273D3 /* PopoverInformationTableCell.swift */; };
+		1A71F4C81CF81F7F003EF648 /* PopoverDefaultTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F4C61CF81F7F003EF648 /* PopoverDefaultTableCell.swift */; };
+		1A71F4C91CF81F7F003EF648 /* PopoverDefaultTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A71F4C71CF81F7F003EF648 /* PopoverDefaultTableCell.xib */; };
+		1A71F4CC1CF820DF003EF648 /* PopoverInformationTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F4CA1CF820DF003EF648 /* PopoverInformationTableCell.swift */; };
+		1A71F4CD1CF820DF003EF648 /* PopoverInformationTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A71F4CB1CF820DF003EF648 /* PopoverInformationTableCell.xib */; };
+		1A71F4CF1CF82A45003EF648 /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A71F4CE1CF82A45003EF648 /* ShowViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -29,7 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1A232CF91CF7EB7700B273D3 /* PopoverInformationTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverInformationTableCell.swift; sourceTree = "<group>"; };
+		1A71F4C61CF81F7F003EF648 /* PopoverDefaultTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverDefaultTableCell.swift; sourceTree = "<group>"; };
+		1A71F4C71CF81F7F003EF648 /* PopoverDefaultTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverDefaultTableCell.xib; sourceTree = "<group>"; };
+		1A71F4CA1CF820DF003EF648 /* PopoverInformationTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverInformationTableCell.swift; sourceTree = "<group>"; };
+		1A71F4CB1CF820DF003EF648 /* PopoverInformationTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverInformationTableCell.xib; sourceTree = "<group>"; };
+		1A71F4CE1CF82A45003EF648 /* ShowViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		29D6FD6772C41B59283C6C8A /* Pods-OMGenericTableView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OMGenericTableView_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OMGenericTableView_Tests/Pods-OMGenericTableView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3EC7F642703DF94CB725391C /* Pods_OMGenericTableView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OMGenericTableView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43CF13F25CBAC863E23AF807 /* Pods_OMGenericTableView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OMGenericTableView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,9 +103,13 @@
 		607FACD21AFB9204008FA782 /* Example for OMGenericTableView */ = {
 			isa = PBXGroup;
 			children = (
-				1A232CF91CF7EB7700B273D3 /* PopoverInformationTableCell.swift */,
+				1A71F4CA1CF820DF003EF648 /* PopoverInformationTableCell.swift */,
+				1A71F4CB1CF820DF003EF648 /* PopoverInformationTableCell.xib */,
+				1A71F4C61CF81F7F003EF648 /* PopoverDefaultTableCell.swift */,
+				1A71F4C71CF81F7F003EF648 /* PopoverDefaultTableCell.xib */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				1A71F4CE1CF82A45003EF648 /* ShowViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -249,6 +261,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A71F4CD1CF820DF003EF648 /* PopoverInformationTableCell.xib in Resources */,
+				1A71F4C91CF81F7F003EF648 /* PopoverDefaultTableCell.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
@@ -362,9 +376,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A71F4CF1CF82A45003EF648 /* ShowViewController.swift in Sources */,
+				1A71F4C81CF81F7F003EF648 /* PopoverDefaultTableCell.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
-				1A232CFA1CF7EB7700B273D3 /* PopoverInformationTableCell.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				1A71F4CC1CF820DF003EF648 /* PopoverInformationTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,16 +1,16 @@
 //
 //  PopoverInformationTableCell.swift
-//  GridDiary
+//  OMGenericTableView
 //
-//  Created by HuangKun on 16/5/11.
-//  Copyright © 2016年 Sumi Interactive. All rights reserved.
+//  Created by HuangKun on 16/5/27.
+//  Copyright © 2016年 CocoaPods. All rights reserved.
 //
 
 import UIKit
 import OMGenericTableView
 
 class PopoverInformationTableCell: OMGenericTableCell {
-
+    
     private var informationLabels: [UILabel]?
     private var separatorViews: [UIView]?
     private var contentsStr: [String] = []
@@ -24,30 +24,27 @@ class PopoverInformationTableCell: OMGenericTableCell {
         }
     }
     
-    var testStr: String = ""
-    
     private var _backInfos: [(title: String, content: String)] = []
     
-    var handler: OMNPNRClosureBox?
+    //    var handler: OMNPNRClosureBox?
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
-    override func handleCellSelection(withMetaData: OMTableCellMetaData) {
-        super.handleCellSelection(withMetaData)
-        handler?.unbox()
-    }
+    //    override func handleCellSelection(withMetaData: OMTableCellMetaData) {
+    //        super.handleCellSelection(withMetaData)
+    //        handler?.unbox()
+    //    }
     
     override func setup(cellWithMetaData: OMTableCellMetaData) {
-        resetView()
         super.setup(cellWithMetaData)
         
+        self.backgroundColor = UIColor(red: 0.467, green: 0.467, blue: 0.467, alpha: 1.00)
+        resetView()
         var views: [String: AnyObject] = [:]
         informationLabels = _backInfos.enumerate().map {index, data in
             
             let result = UILabel()
             result.text = data.content + " " + data.title
+            result.textColor = UIColor(red: 0.753, green: 0.753, blue: 0.753, alpha: 1.00)
+            result.font = UIFont.systemFontOfSize(15)
             result.textAlignment = .Center
             result.sizeToFit()
             result.translatesAutoresizingMaskIntoConstraints = false
@@ -70,7 +67,7 @@ class PopoverInformationTableCell: OMGenericTableCell {
         
         separatorViews = (0..<(_backInfos.count + 1)).map { index in
             let result = UIView(frame: CGRect(x: 0, y: 0, width: 1, height: self.bounds.height * 0.6))
-            result.backgroundColor = UIColor.redColor()
+            result.backgroundColor = UIColor(red: 0.765, green: 0.765, blue: 0.765, alpha: 1.00)
             
             separatorStr.append("separator_" + String(index))
             views.updateValue(result, forKey: "separator_" + String(index))
@@ -79,6 +76,11 @@ class PopoverInformationTableCell: OMGenericTableCell {
             let height = NSLayoutConstraint(item: result, attribute: .Height, relatedBy: .Equal, toItem: nil, attribute: NSLayoutAttribute(rawValue: 0)!, multiplier: 1, constant: self.bounds.height * 0.5)
             separatorViewsWidthConstriants.append(width)
             separatorViewsHightConStraints.append(height)
+            
+            if index == 0 || index == _backInfos.count {
+                result.alpha = 0
+            }
+            
             self.addSubview(result)
             return result
         }
@@ -96,16 +98,15 @@ class PopoverInformationTableCell: OMGenericTableCell {
         
         horizontalString += "-(10)-|"
         
-        print(horizontalString)
         
         let baseHorizontalConstraints = NSLayoutConstraint.constraintsWithVisualFormat(horizontalString, options: .AlignAllCenterY, metrics: nil, views: views)
         allCustomConstraints = baseHorizontalConstraints + separatorViewsWidthConstriants + separatorViewsHightConStraints
         allCustomConstraints += [centerY]
         _ = allCustomConstraints.map { $0.active = true }
         
-//        bottomLineView.frame = CGRect(x: 0, y: self.bounds.height - 1, width: self.bounds.width, height: 1)
-//        bottomLineView.backgroundColor = UIColor.gd_lineColor()
-//        self.addSubview(bottomLineView)
+        //        bottomLineView.frame = CGRect(x: 0, y: self.bounds.height - 1, width: self.bounds.width, height: 1)
+        //        bottomLineView.backgroundColor = UIColor.gd_lineColor()
+        //        self.addSubview(bottomLineView)
         self.setNeedsDisplay()
     }
     

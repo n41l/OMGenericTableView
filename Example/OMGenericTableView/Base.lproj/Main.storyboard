@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFz-Nl-nEd">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UFz-Nl-nEd">
                                 <rect key="frame" x="265" y="285" width="70" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="70" id="yqD-9c-IDB"/>
@@ -30,16 +30,55 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="UFz-Nl-nEd" secondAttribute="bottom" constant="30" id="1e8-io-XL9"/>
                             <constraint firstItem="UFz-Nl-nEd" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Dad-hM-Egk"/>
-                            <constraint firstItem="UFz-Nl-nEd" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="KaV-kc-VWL"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="tapMeButton" destination="UFz-Nl-nEd" id="YAr-hy-vnx"/>
+                        <segue destination="hym-GW-wdf" kind="show" identifier="Show" id="Pf8-9u-K2f"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="246" y="425"/>
+        </scene>
+        <!--Show View Controller-->
+        <scene sceneID="2ka-Ot-ybj">
+            <objects>
+                <viewController id="hym-GW-wdf" customClass="ShowViewController" customModule="OMGenericTableView_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4Ea-Im-Tpq"/>
+                        <viewControllerLayoutGuide type="bottom" id="qp8-2v-v1d"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rKA-wg-GZo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doz-7N-5BT">
+                                <rect key="frame" x="245" y="285" width="110" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="Cn2-m1-eqe"/>
+                                </constraints>
+                                <state key="normal" title="dismissMe~!"/>
+                                <connections>
+                                    <action selector="dismissMeButtonDidPressed:" destination="hym-GW-wdf" eventType="touchUpInside" id="aql-Og-YrC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.192" green="0.76900000000000002" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="doz-7N-5BT" firstAttribute="centerX" secondItem="rKA-wg-GZo" secondAttribute="centerX" id="aq2-1F-k3n"/>
+                            <constraint firstItem="doz-7N-5BT" firstAttribute="centerY" secondItem="rKA-wg-GZo" secondAttribute="centerY" id="gjh-8a-G2H"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dimissMeButton" destination="doz-7N-5BT" id="d6J-ML-7dY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BCE-yb-wNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="954" y="425"/>
         </scene>
     </scenes>
 </document>

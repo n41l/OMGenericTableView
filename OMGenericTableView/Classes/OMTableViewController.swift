@@ -34,7 +34,7 @@ public class OMTableViewController: NSObject {
         tableView.delegate = self
         tableView.dataSource = self
         for cellMetaData in allCellMetaDatas {
-            tableView.registerClass(cellMetaData.currentCellClass, forCellReuseIdentifier: cellMetaData.cellIdentifier)
+            tableView.registerNib(UINib(nibName: cellMetaData.cellNibName, bundle: nil), forCellReuseIdentifier: cellMetaData.cellIdentifier)
         }
     }
     
