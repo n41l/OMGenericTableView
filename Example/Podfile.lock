@@ -1,0 +1,22 @@
+PODS:
+  - Nimble (3.2.0)
+  - OMGenericTableView (0.1.0)
+  - Quick (0.9.2)
+
+DEPENDENCIES:
+  - Nimble (~> 3.0)
+  - OMGenericTableView (from `../`)
+  - Quick (~> 0.8)
+
+EXTERNAL SOURCES:
+  OMGenericTableView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  OMGenericTableView: 79e6f1074f861f31b8d220ccde1dd61f80348173
+  Quick: 18d057bc66451eedd5d1c8dc99ba2a5db6e60226
+
+PODFILE CHECKSUM: 67cbf0e57628dff1a0abc2ba7aaf015bc312629f
+
+COCOAPODS: 1.0.0

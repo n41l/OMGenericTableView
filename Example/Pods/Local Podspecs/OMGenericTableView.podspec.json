@@ -1,0 +1,22 @@
+{
+  "name": "OMGenericTableView",
+  "version": "0.1.0",
+  "summary": "A short description of OMGenericTableView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/OMGenericTableView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "HuangKun": "diueym@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/OMGenericTableView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "OMGenericTableView/Classes/**/*"
+}

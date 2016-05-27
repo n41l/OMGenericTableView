@@ -1,0 +1,6 @@
+framework module OMGenericTableView {
+  umbrella header "OMGenericTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}
