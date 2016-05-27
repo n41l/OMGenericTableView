@@ -13,7 +13,15 @@ import UIKit
 public class OMTableViewController: NSObject {
     
     public var tableView: UITableView!
+    
     var allCellMetaDatas: [OMTableCellMetaData]
+    var defaultTableViewHeight: CGFloat {
+        get {
+            return allCellMetaDatas.reduce(0.0) { (initial, metaData) -> CGFloat in
+                return initial + metaData.cellHeight
+            }
+        }
+    }
     
     public init(withCellMetaDatas: OMTableCellMetaData...) {
         allCellMetaDatas = withCellMetaDatas
@@ -22,7 +30,7 @@ public class OMTableViewController: NSObject {
     }
     
     private func setupTableView() {
-        tableView = UITableView(frame: CGRectZero)
+        tableView = UITableView(frame: CGRect(x: 0, y: 0, width: 0, height: defaultTableViewHeight))
         tableView.delegate = self
         tableView.dataSource = self
         for cellMetaData in allCellMetaDatas {

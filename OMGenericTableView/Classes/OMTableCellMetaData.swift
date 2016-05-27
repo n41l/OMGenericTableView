@@ -26,6 +26,7 @@ public class OMTableCellMetaData: NSObject {
     public var cellHeight: CGFloat = 60
     public var cellBackgroundColor: UIColor = UIColor.whiteColor()
     public var cellSelection: Bool = true
+    public var cellCustomSeparatorShow: Bool = false
     
     public init?(_ withClass: AnyClass) {
         guard var className = String.fromCString(class_getName(withClass)) else { return nil }
@@ -66,6 +67,11 @@ public class OMTableCellMetaData: NSObject {
     
     public func with(cellSelection flag: Bool) -> OMTableCellMetaData {
         self.cellSelection = flag
+        return self
+    }
+    
+    public func with(cellCustomSeparatorShow: Bool) -> OMTableCellMetaData {
+        self.cellCustomSeparatorShow = cellCustomSeparatorShow
         return self
     }
     
